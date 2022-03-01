@@ -1,6 +1,6 @@
 /*==============================================================================
  File: UBMP4.1.h
- Date: February 28, 2022
+ Date: March 1, 2022
  
  UBMP4.1 (PIC16F1459) symbolic constant definitions and function prototypes
  
@@ -95,7 +95,7 @@
 // Clock frequency for delay macros and simulation
 #define _XTAL_FREQ  48000000        // Set clock frequency for time delays
 
-// Prototypes for UBMP4.c functions:
+// Prototypes for UBMP4.1.c functions:
 
 /**
  * Function: void OSC_config(void)
@@ -147,5 +147,5 @@ unsigned char ADC_read(void);
  */
 unsigned char ADC_read_channel(unsigned char);
 
-// TODO - Add additional function prototypes for new functions in UBMP4.c here.
+// TODO - Add additional function prototypes for new functions in UBMP4.1.c here
 

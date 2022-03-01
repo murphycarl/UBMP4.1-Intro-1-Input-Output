@@ -1,6 +1,6 @@
 /*==============================================================================
  File: UBMP4.1.c
- Date: February 28, 2022
+ Date: March 1, 2022
  
  UBMP4.1 (PIC16F1459) hardware initialization functions
  
@@ -61,7 +61,7 @@ void ADC_config(void)
 }
 
 // Enable ADC and switch the input mux to the specified channel (use channel
-// constants defined in UBMP4.h header file - eg. ANQ1).
+// constants defined in UBMP4.1.h header file - eg. ANQ1).
 void ADC_select_channel(unsigned char channel)
 {
     ADON = 1;                   // Turn the A-D converter on
@@ -79,7 +79,7 @@ unsigned char ADC_read(void)
 }
 
 // Enable ADC, switch to specified channel, and return 8-bit conversion result.
-// Use channel constants defined in UBMP4.h header file (eg. ANQ1).
+// Use channel constants defined in UBMP4.1.h header file (eg. ANQ1).
 unsigned char ADC_read_channel(unsigned char channel)
 {
     ADON = 1;                   // Turn the A-D converter on
