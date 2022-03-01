@@ -1,11 +1,11 @@
 /*==============================================================================
- File: UBMP4.1.c
+ File: UBMP410.c
  Date: March 1, 2022
  
  UBMP4.1 (PIC16F1459) hardware initialization functions
  
  Initialization functions to configure the PIC16F1459 oscillator and on-board
- UBMP4 devices. Include UMBP4.1.h in your main program to call these functions.
+ UBMP4 devices. Include UMBP410.h in your main program to call these functions.
 ==============================================================================*/
 
 #include    "xc.h"              // XC compiler general include file
@@ -13,7 +13,7 @@
 #include    "stdint.h"          // Include integer definitions
 #include    "stdbool.h"         // Include Boolean (true/false) definitions
 
-#include    "UBMP4-1.h"         // Include UBMP4.1 constant and function definitions
+#include    "UBMP410.h"         // Include UBMP4.1 constant and function definitions
 
 // TODO Initialize oscillator, ports and other PIC/UBMP hardware features here:
 
@@ -61,7 +61,7 @@ void ADC_config(void)
 }
 
 // Enable ADC and switch the input mux to the specified channel (use channel
-// constants defined in UBMP4.1.h header file - eg. ANQ1).
+// constants defined in UBMP410.h header file - eg. ANQ1).
 void ADC_select_channel(unsigned char channel)
 {
     ADON = 1;                   // Turn the A-D converter on
@@ -79,7 +79,7 @@ unsigned char ADC_read(void)
 }
 
 // Enable ADC, switch to specified channel, and return 8-bit conversion result.
-// Use channel constants defined in UBMP4.1.h header file (eg. ANQ1).
+// Use channel constants defined in UBMP410.h header file (eg. ANQ1).
 unsigned char ADC_read_channel(unsigned char channel)
 {
     ADON = 1;                   // Turn the A-D converter on

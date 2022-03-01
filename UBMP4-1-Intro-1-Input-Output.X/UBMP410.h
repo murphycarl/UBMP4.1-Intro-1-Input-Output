@@ -1,5 +1,5 @@
 /*==============================================================================
- File: UBMP4.1.h
+ File: UBMP410.h
  Date: March 1, 2022
  
  UBMP4.1 (PIC16F1459) symbolic constant definitions and function prototypes
@@ -7,16 +7,16 @@
  I/O pin definitions section:
  Inputs read port registers (eg. RC0), and outputs write to port latches
  (eg. LATC0). Use this file to create unique symbolic names for each input
- and output device connected to the I/O pins of the PIC16F1459 in the UBMP4.
+ and output device connected to the I/O pins of the PIC16F1459 in the UBMP4.1
  
  ADC input channel definitions section:
  Definitions representing ADCON0 channel select (CHS) bit for the ADC channels
  available on the UMBP4.
  
  Function prototypes section:
- Functions in the UBMP4.1.c file need to be defined before use in the main user
+ Functions in the UBMP410.c file need to be defined before use in the main user
  program. This header file contains the function prototype definitions for the
- functions in the UBMP4.1.c file.
+ functions in the UBMP410.c file.
 ==============================================================================*/
 
 // TODO - Add/modify user constant definitions for UBMP hardware here.
@@ -95,7 +95,7 @@
 // Clock frequency for delay macros and simulation
 #define _XTAL_FREQ  48000000        // Set clock frequency for time delays
 
-// Prototypes for UBMP4.1.c functions:
+// Prototypes for UBMP410.c functions:
 
 /**
  * Function: void OSC_config(void)
@@ -147,5 +147,5 @@ unsigned char ADC_read(void);
  */
 unsigned char ADC_read_channel(unsigned char);
 
-// TODO - Add additional function prototypes for new functions in UBMP4.1.c here
+// TODO - Add additional function prototypes for new functions in UBMP410.c here
 
