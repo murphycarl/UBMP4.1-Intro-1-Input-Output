@@ -15,7 +15,7 @@
 #include    "stdint.h"          // Include integer definitions
 #include    "stdbool.h"         // Include Boolean (true/false) definitions
 
-#include    "UBMP4.1.h"         // Include UBMP4.1 constant and function definitions
+#include    "UBMP4-1.h"         // Include UBMP4.1 constant and function definitions
 
 // TODO Set linker ROM ranges to 'default,-0-7FF' under "Memory model" pull-down.
 // TODO Set linker code offset to '800' under "Additional options" pull-down.

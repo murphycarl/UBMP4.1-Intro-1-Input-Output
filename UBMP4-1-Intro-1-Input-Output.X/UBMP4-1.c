@@ -13,7 +13,7 @@
 #include    "stdint.h"          // Include integer definitions
 #include    "stdbool.h"         // Include Boolean (true/false) definitions
 
-#include    "UBMP4.1.h"         // Include UBMP4.1 constant and function definitions
+#include    "UBMP4-1.h"         // Include UBMP4.1 constant and function definitions
 
 // TODO Initialize oscillator, ports and other PIC/UBMP hardware features here:
 
