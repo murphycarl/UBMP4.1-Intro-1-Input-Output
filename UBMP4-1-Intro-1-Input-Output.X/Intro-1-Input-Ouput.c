@@ -24,15 +24,15 @@ void playNote(int period, int durationCycles, bool isRest) {
 // const int q = 500;
 // const int t = 2000;
 
-        const int Ash = 466;
-        const int Dsh = 622;
-        const int C = 523;
-        const int D = 587;
-        const int G = 392;
-        const int Gsh = 415;
-        const int LDsh = 311;
-        const int q = 250;
-        const int t = 250;
+            const int Ash = 329;
+            const int Dsh = 523;
+            const int C = 440;
+            const int D = 493;
+            const int G = 329;
+            const int Gsh = 207;
+            const int LDsh = 311;
+            const int q = 1000;
+            const int t = 1000;
 
 int main(void)
 {
@@ -42,14 +42,14 @@ int main(void)
      {
 if(SW5 == 0 && SW4==1 && SW3==1)
      {
-playNote(Ash, q, false);
+playNote(Dsh, q, false);
+playNote(Dsh, q, true);
+
 playNote(Ash, q, true);
+playNote(Ash, q, false);
 
 playNote(Dsh, q, true);
 playNote(Dsh, q, false);
-
-playNote(Ash, q, true);
-playNote(Ash, q, false);
 
 playNote(C, q, true);
 playNote(C, q, false);
@@ -143,32 +143,50 @@ if(SW1 == 0)
 
 notes for song
 
-A sharp (b flat)    466
-D sharp (e flat)    622
-A sharp (b flat)    466
-C                   523
-D                   587
-G long              392
-G short             392
+A sharp (b flat)    466.    G4  329
+D sharp (e flat)    622.    C5  523
+A sharp (b flat)    466     G4  329
+C                   523     A4  440
+D                   587     B4  493
+G long              392     E4  329
+G short             392     E4  329
 C5                  523
 A sharp             466
 G sharp             415
 A sharp             466
 D sharp             311
 
-        const int Ash = 466;
-        const int Dsh = 622;
-        const int C = 523;
-        const int D = 587;
-        const int G = 392;
-        const int Gsh = 415;
+            const int Ash = 329;
+            const int Dsh = 523;
+            const int C = 440;
+            const int D = 493;
+            const int G = 329;
+            const int Gsh = 207;
+            const int LDsh = 311;
+            const int q = 1000;
+            const int t = 1000;
+
+
+
+
+
+
+
+        const int Ash = 233;            
+        const int Dsh = 311;
+        const int C = 261;
+        const int D = 293;
+        const int G = 196;
+        const int Gsh = 207;
         const int LDsh = 311;
+    
+        
+        const int q = 250;
+        const int t = 250;
 
-        const int q = 500;
-        const int t = 2000;
 
 
 
-
+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
 
  */
